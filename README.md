@@ -51,49 +51,49 @@ Gambar 1.1
 
 Berikut adalah penjelasan tentang fungsi dan cara kerja setiap baris dari kode pada gambar 1.1:
 
-1. public class task1 {
+1. `public class task1 {`
    - Ini adalah deklarasi kelas utama dengan nama "task1".
 
-2. public static void main(String[] args) {
+2. `public static void main(String[] args) {`
    - Ini adalah metode utama (main method) dari kelas "task1". Program Java akan dijalankan dari sini.
 
-3. String name = "Khayla Rahma Levina";
+3. `String name = "Khayla Rahma Levina";`
    - Ini mendefinisikan sebuah variabel dengan nama "name" dan menginisialisasinya dengan string "Khayla Rahma Levina".
 
-4. String NPM = "G1A023045";
+4. `String NPM = "G1A023045";`
    - Ini mendefinisikan variabel "NPM" dan menginisialisasinya dengan string "G1A023045".
 
-5. System.out.println("Nama: " + name);
+5. `System.out.println("Nama: " + name);`
    - Ini mencetak teks "Nama: " diikuti oleh isi dari variabel "name" ke layar.
 
-6. System.out.println("NPM : " + NPM);
+6. `System.out.println("NPM : " + NPM);`
    - Ini mencetak teks "NPM : " diikuti oleh isi dari variabel "NPM" ke layar.
 
-7. System.out.println("x:==================");
+7. `System.out.println("x:==================");`
    - Ini mencetak teks "x:==================" ke layar.
 
-8. for (int i = 0 ; i<=100 ; i++){
-   - Ini adalah awal dari loop for. Loop ini akan berjalan dari i mulai dari 0 hingga 100, dengan i bertambah satu pada setiap iterasi.
+8. `for (int i = 0 ; i<=100 ; i++){`
+   - Ini adalah awal dari loop `for`. Loop ini akan berjalan dari `i` mulai dari 0 hingga 100, dengan `i` bertambah satu pada setiap iterasi.
 
-9. if (i>= 10 ){
-   - Ini adalah kondisi if yang memeriksa apakah nilai i lebih besar atau sama dengan 10.
+9. `if (i>= 10 ){`
+   - Ini adalah kondisi if yang memeriksa apakah nilai `i` lebih besar atau sama dengan 10.
 
-10. System.out.println(name);
-    - Jika kondisi if terpenuhi (yaitu i lebih besar atau sama dengan 10), maka kode ini akan mencetak isi dari variabel "name" ke layar.
+10. `System.out.println(name);`
+    - Jika kondisi if terpenuhi (yaitu `i` lebih besar atau sama dengan 10), maka kode ini akan mencetak isi dari variabel "name" ke layar.
 
-11. else {
+11. `else {`
     - Ini adalah bagian else yang akan dieksekusi jika kondisi if tidak terpenuhi.
 
-12. System.out.println(i);
-    - Jika kondisi if tidak terpenuhi (yaitu i kurang dari 10), maka kode ini akan mencetak nilai i ke layar.
+12. `System.out.println(i);`
+    - Jika kondisi if tidak terpenuhi (yaitu `i` kurang dari 10), maka kode ini akan mencetak nilai `i` ke layar.
 
-13. } 
+13. `}` 
     - Ini adalah penutup dari blok else.
 
-14. } 
-    - Ini adalah penutup dari loop for.
+14. `}` 
+    - Ini adalah penutup dari loop `for`.
 
-Kode ini mencetak nama dan NPM ke layar, kemudian mencetak "x:==================", dan selanjutnya mencetak angka dari 0 hingga 100 atau nama "Khayla Rahma Levina" tergantung pada nilai i. Jika i kurang dari 10, maka angka akan dicetak, dan jika i lebih besar atau sama dengan 10, maka nama akan dicetak.
+Kode ini mencetak nama dan NPM ke layar, kemudian mencetak "x:==================", dan selanjutnya mencetak angka dari 0 hingga 100 atau nama "Khayla Rahma Levina" tergantung pada nilai `i`. Jika `i` kurang dari 10, maka angka akan dicetak, dan jika `i` lebih besar atau sama dengan 10, maka nama akan dicetak.
 
 
 ## N0.2 (LOOP)
@@ -104,55 +104,55 @@ Gambar 1.2
 
 Berikut adalah penjelasan tentang fungsi dan cara kerja setiap baris dari kode pada gambar 1.2:
 
-1. import java.util.Scanner;
-   - Ini adalah pernyataan impor yang mengimpor kelas Scanner dari pustaka java.util. Ini diperlukan untuk penggunaan Scanner dalam program.
+1. `import java.util.Scanner;`
+   - Ini adalah pernyataan impor yang mengimpor kelas `Scanner` dari pustaka `java.util`. Ini diperlukan untuk penggunaan `Scanner` dalam program.
 
-2. public class task8 {
+2. `public class task8 {`
    - Ini adalah deklarasi kelas utama dengan nama "task8".
 
-3. public static void main(String[] args) {
+3. `public static void main(String[] args) {`
    - Ini adalah metode utama (main method) dari kelas "task8". Program Java akan dijalankan dari sini.
 
-4. Scanner input = new Scanner(System.in);
-   - Ini mendeklarasikan objek input yang akan digunakan untuk membaca input dari pengguna melalui keyboard.
+4. `Scanner input = new Scanner(System.in);`
+   - Ini mendeklarasikan objek `input` yang akan digunakan untuk membaca input dari pengguna melalui keyboard.
 
-5. System.out.print("Masukan sebuah bilangan bulat");
+5. `System.out.print("Masukan sebuah bilangan bulat");`
    - Ini mencetak teks "Masukkan sebuah bilangan bulat" ke layar tanpa baris baru.
 
-6. int bilangan = input.nextInt();
-   - Ini membaca sebuah bilangan bulat yang dimasukkan oleh pengguna dan menyimpannya dalam variabel bilangan.
+6. `int bilangan = input.nextInt();`
+   - Ini membaca sebuah bilangan bulat yang dimasukkan oleh pengguna dan menyimpannya dalam variabel `bilangan`.
 
-7. input.close();
-   - Ini menutup objek Scanner yang digunakan untuk input. Ini adalah praktik yang baik untuk memastikan sumber daya dibebaskan setelah penggunaan.
+7. `input.close();`
+   - Ini menutup objek `Scanner` yang digunakan untuk input. Ini adalah praktik yang baik untuk memastikan sumber daya dibebaskan setelah penggunaan.
 
-8. if (bilangan % 2 == 0) {
-   - Ini adalah kondisi if yang memeriksa apakah bilangan adalah bilangan genap atau tidak. Operasi modulo (%) digunakan untuk memeriksa sisa pembagian bilangan dengan 2. Jika hasilnya 0, maka bilangan genap.
+8. `if (bilangan % 2 == 0) {`
+   - Ini adalah kondisi if yang memeriksa apakah `bilangan` adalah bilangan genap atau tidak. Operasi modulo (`%`) digunakan untuk memeriksa sisa pembagian `bilangan` dengan 2. Jika hasilnya 0, maka bilangan genap.
 
-9. System.out.println("Bilangan " + bilangan + " adalah bilangan genap.");
-   - Jika kondisi if terpenuhi (yaitu bilangan adalah bilangan genap), maka kode ini mencetak pesan yang menyatakan bahwa bilangan adalah bilangan genap.
+9. `System.out.println("Bilangan " + bilangan + " adalah bilangan genap.");`
+   - Jika kondisi if terpenuhi (yaitu `bilangan` adalah bilangan genap), maka kode ini mencetak pesan yang menyatakan bahwa `bilangan` adalah bilangan genap.
 
-10. else {
+10. `else {`
     - Ini adalah bagian else yang akan dieksekusi jika kondisi if tidak terpenuhi.
 
-11. System.out.println("Bilangan " + bilangan + " adalah bilangan ganjil.");
-    - Jika kondisi if tidak terpenuhi (yaitu bilangan bukan bilangan genap), maka kode ini mencetak pesan yang menyatakan bahwa bilangan adalah bilangan ganjil.
+11. `System.out.println("Bilangan " + bilangan + " adalah bilangan ganjil.");`
+    - Jika kondisi if tidak terpenuhi (yaitu `bilangan` bukan bilangan genap), maka kode ini mencetak pesan yang menyatakan bahwa `bilangan` adalah bilangan ganjil.
 
-12. System.out.println("Menggunakan perulangan while untuk menghitung dari 1 hingga" + bilangan);
-    - Ini mencetak pesan yang menyatakan bahwa program akan menggunakan perulangan while untuk menghitung dari 1 hingga bilangan.
+12. `System.out.println("Menggunakan perulangan while untuk menghitung dari 1 hingga" + bilangan);`
+    - Ini mencetak pesan yang menyatakan bahwa program akan menggunakan perulangan `while` untuk menghitung dari 1 hingga `bilangan`.
 
-13. int i = 1;
-    - Ini mendeklarasikan variabel i dan menginisialisasinya dengan nilai 1.
+13. `int i = 1;`
+    - Ini mendeklarasikan variabel `i` dan menginisialisasinya dengan nilai 1.
 
-14. while (i <= bilangan) {
-    - Ini adalah awal dari perulangan while. Program akan menjalankan pernyataan di dalam blok while selama i kurang dari atau sama dengan bilangan.
+14. `while (i <= bilangan) {`
+    - Ini adalah awal dari perulangan `while`. Program akan menjalankan pernyataan di dalam blok `while` selama `i` kurang dari atau sama dengan `bilangan`.
 
-15. System.out.println(i); i++;
-    - Ini mencetak nilai i ke layar dan kemudian menaikkan nilai i dengan 1.
+15. `System.out.println(i); i++;`
+    - Ini mencetak nilai `i` ke layar dan kemudian menaikkan nilai `i` dengan 1.
 
-16. }
-    - Ini adalah penutup dari perulangan while.
+16. `}`
+    - Ini adalah penutup dari perulangan `while`.
 
-Kode ini mengambil input dari pengguna, memeriksa apakah bilangan tersebut genap atau ganjil, mencetak pesan sesuai dengan hasilnya, dan kemudian menggunakan perulangan while untuk mencetak angka dari 1 hingga bilangan.
+Kode ini mengambil input dari pengguna, memeriksa apakah bilangan tersebut genap atau ganjil, mencetak pesan sesuai dengan hasilnya, dan kemudian menggunakan perulangan `while` untuk mencetak angka dari 1 hingga `bilangan`.
 
 
 ## NO.3 (PROGRAM ZODIAK)
