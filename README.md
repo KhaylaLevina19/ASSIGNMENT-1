@@ -49,6 +49,26 @@ Kombinasi antara Java dan VSCode memberikan fleksibilitas dan daya saing yang di
 
 Gambar 1.1
 
+#### code: 
+public class task1{
+  public static void main(String[] args){
+    String name = "Khayla Rahma Levina";
+    String NPM = "G1A023045";
+    System.out.println("Nama: " + name);
+    System.out.println("NPM : " + NPM);
+    System.out.println("x:==================");
+    for (int i = 0 ; i<=100 ; i++){
+      if (i>= 10 ){
+        System.out.println(name);
+      }
+      else{
+        System.out.println(i);
+      }
+    }
+  }
+}
+
+
 Berikut adalah penjelasan tentang fungsi dan cara kerja setiap baris dari kode pada gambar 1.1:
 
 1. `public class task1 {`
@@ -101,6 +121,32 @@ Kode ini mencetak nama dan NPM ke layar, kemudian mencetak "x:==================
 ![image](https://github.com/KhaylaLevina19/ASSIGNMENT-1/assets/149869603/19f31a7a-1123-4400-a164-59a0d69902c5)
 
 Gambar 1.2
+
+#### code:
+
+import java.util.Scanner;
+
+public class task8{
+    public static void main(String[] args){
+        Scanner input = new Scanner(System.in);
+        System.out.print("Masukan sebuah bilangan bulat");
+        int bilangan = input.nextInt();
+        input.close();
+
+        if (bilangan % 2 == 0){
+            System.out.println("Bilangan " + bilangan + " adalah bilangan genap.");
+        }else{
+            System.out.println("Bilangan " + bilangan + " adalah bilangan ganjil.");
+        }
+        System.out.println("Menggunakan perulangan while untuk menghitung dari 1 hingga" + bilangan);
+
+        
+        int i = 1;
+        while (i <= bilangan){
+            System.out.println(i); i++;
+        }
+    }
+}
 
 Berikut adalah penjelasan tentang fungsi dan cara kerja setiap baris dari kode pada gambar 1.2:
 
@@ -165,6 +211,65 @@ Gambar 1.3
 
 Gambar 1.4
 
+#### code:
+
+import java.util.Scanner;
+
+public class zodiac7 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Masukan tanggal lahir anda");
+        int tanggal = sc.nextInt();
+        System.out.println("masukan bulan lahir anda");
+        int bulan = sc.nextInt();
+        sc.close();
+
+        String zodiac  = "";
+
+        switch (bulan) {
+            case 1:
+                zodiac = (tanggal <= 19) ? "Capricon" : "Aquarius";
+                break;
+            case 2:
+                zodiac = (tanggal <= 18) ? "Aquarius" : "Pisces";
+                break;
+            case 3:
+                zodiac = (tanggal <= 20) ? "Pisces" : "Aries";
+                break;
+            case 4:
+                zodiac = (tanggal <= 19) ? "Aries" : "Taurus";
+                break;
+            case 5:
+                zodiac = (tanggal <= 20) ? "Taurus" : "Gemini";
+                break;
+            case 6:
+                zodiac = (tanggal <= 20) ? "Gemini" : "Cancer";
+                break;
+            case 7:
+                zodiac = (tanggal <= 22) ? "Cancer" : "Leo";
+                break;
+            case 8:
+                zodiac = (tanggal <= 22) ? "leo" : "Virgo";
+                break;
+            case 9:
+                zodiac = (tanggal <= 22) ? "Virgo" : "Libra";
+                break;
+            case 10:
+                zodiac = (tanggal <= 22) ? "Libra" : "Scorpio";
+                break;
+            case 11:
+                zodiac = (tanggal <= 21) ? "Scorpio" : "Sagitarius";
+                break;
+            case 12:
+                zodiac = (tanggal <= 21) ? "Sagitarius" : "Capricon";
+                break;
+
+        }
+        System.out.println("jadi zodiak anda adalah: " + zodiac);
+    
+    }
+}
+
 Berikut adalah penjelasan tentang fungsi dan cara kerja setiap baris kode:
 
 1. `import java.util.Scanner;`
@@ -212,6 +317,28 @@ Kode ini memungkinkan pengguna untuk memasukkan tanggal dan bulan lahir mereka, 
 <img width="740" alt="image" src="https://github.com/KhaylaLevina19/ASSIGNMENT-1/assets/149869603/56bc96d7-7e3d-443c-b881-615ba0ddb5ab">
 
 Gambar 1.5
+
+#### code:
+
+public class task5 {
+    public static void main(String[] args) {
+    
+
+        String [] food = {"burger" , "noodle" , "pasta" , "choke" , "candy"};
+
+        System.out.println(food[2]);
+
+        for (int i=0; i < 5; i++){
+
+            System.out.println(food[i]);
+        }
+
+    }
+        
+
+
+            
+}
 
 Kode pada gambar 1.5 adalah program sederhana dalam bahasa Java yang bekerja dengan array string. Berikut adalah penjelasan tentang fungsi dan cara kerja setiap baris kode:
 
